@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GetPlayer {
     private final GetPlayerByIdUseCase getPlayerByIdUseCase;
 
-    @GetMapping(path = "/getById/{playerId}")
+    @GetMapping(path = "/api/players/{playerId}")
     public Player getById(@PathVariable String playerId) {
         if (playerId.isBlank()) {
             throw new ValidationException("playerId must not be blank");

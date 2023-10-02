@@ -13,7 +13,7 @@ import java.util.List;
 public class GetPlayerList {
     private final GetPlayerListUseCase getPlayerListUseCase;
 
-    @GetMapping(path = "/getAll")
+    @GetMapping(path = "/api/players")
     public List<Player> getList() {
         return getPlayerListUseCase.getAll();
     }
